@@ -10,11 +10,11 @@ public class Client2 {
 
 	public static void main(String[] args) {
 		CircleBasic cb = new CircleBasic(5, "MyCircle");
-		Triangle tr = new Triangle(2, 3, "MyTriangle");
+		Triangle tr = new Triangle(2, 5, "MyTriangle");
 
 		Shape s = new CircleBasic(5, "MyCircle");
 		Shape s2 = new Triangle2(2, 3, "MyTriangle");
-		Triangle t1 = new Triangle(2, 3, "MyTriangle");
+		Triangle t1 = new Triangle(2, 4, "MyTriangle");
 		Triangle t2 = new Triangle(2, 3, "MyTriangle");
 		Art a = new Triangle2(2, 3, "MyTriangleArt");
 		a = new CircleBasic(5, "MyCircleArt");
@@ -22,7 +22,9 @@ public class Client2 {
 
 		boolean flag = false;
 		flag = t1.equals(t2);
+		int compare = t1.compareTo(t2);
 		
+		System.out.println("Compare " + compare);
 		if (flag) {
 			System.out.println("Boolean val is " + flag);
 			System.out.println(t1);

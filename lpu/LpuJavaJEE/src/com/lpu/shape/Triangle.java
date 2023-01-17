@@ -1,6 +1,6 @@
 package com.lpu.shape;
 
-public class Triangle extends Shape {
+public class Triangle extends Shape implements Comparable<Triangle>{
 private double base;
 private double height;
 
@@ -41,6 +41,16 @@ public int hashCode() {
 @Override
 public String toString() {
 	return this.base + " " + this.height + super.toString();
+}
+
+@Override
+public int compareTo(Triangle o) {
+	int size;
+	if(this.base+this.height > o.base+o.height) {size =1;}
+	else {size =-1;}
+	
+	if(this.equals(o)) {size = 0;}
+	return size;
 }
 
 
