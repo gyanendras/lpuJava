@@ -1,0 +1,125 @@
+TA, understanding from about TA. 
+
+what did you do yesterday? Are you stuck on something ? 
+
+Sort 5 circles
+
+
+1 1 23 4
+2 1234 
+3
+4
+
+
+
+java 8 pushed in eclipse, debug using 11 ; compalibility features.
+
+
+// create a package com.lpu put this class in that and then compile.
+
+
+1. Create class Student, Employee, Book, Calculator, Car.
+this will have just the name and attributes and 1 or 2 methods you can think off.
+ 
+2. Create a Java Project in Eclipse, name it may LpuJEE
+
+3.Paste Triangle and Circle classes  in Eclipse and run them.
+
+
+1. Add a Client Class to print Cricle.getArea() in its main, and make attribute variable of Circle class private.
+2. 
+
+
+
+
+
+class Employee{
+double salary;
+int id;
+String empName;
+String deptname;
+Long phoneNo;
+Address address;
+
+}
+
+class Address{
+int hNo;
+String streetName;
+String city;
+String state;
+int pin;
+String country;
+
+
+
+}
+
+class Department{
+List empList;
+String dpName;
+Employee dHead;
+Long code;
+Address address;
+
+
+
+}
+
+
+Class Student{
+String name;
+int id;
+Hostel hostel;
+
+Student(){
+name = "NA";
+id = -1;
+hostel =null;
+}
+
+Student(String name, int id, Hostel hostel){
+this.name = name;
+this.id = id;
+this.hostel = hostel;
+}
+
+String getName(){
+
+}
+
+public static void main(String[] args){
+Student st = new Student();
+// create your own object here
+Student st2 = new Student("Gyan",10,null);
+
+//print the name of st2 here
+
+}
+
+
+}
+
+Create Shape class and store 2 subclasses Circle1 and Cirecle2
+store them in shape variabe and print getName 
+
+WAP to reverse a String ?
+char [] chArr = s.toCharArray();
+print them backwards in Arrays ?
+try out length(), substring, indexOf methods if String class.
+
+Create interface Spinnable, and let shape also implement Spinnable.
+let a method spin() be part of contract of Spinnable. i.e let Spinnable contain spin(), and in the method just print spinning.
+
+
+what did you do yesterday? Are you stuck on something ? 
+Practise overriding and overloading ?
+
+https://www.hackerrank.com/challenges/java-strings-introduction/problem?isFullScreen=true
+
+override equals and hashcode in circle class?
+Create a git project in your eclipse using https://github.com/gyanendras/lpuJava.gits
+
+Store 10 words in an Array and sort it in ascending using Arrays.sort()
+
+

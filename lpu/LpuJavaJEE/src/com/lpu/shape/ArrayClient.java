@@ -17,6 +17,8 @@ public class ArrayClient {
 		trArr[0] = t1;
 		trArr[1] = tr;
 		trArr[2] = t2;
+		
+		
 		Art art = new Triangle(21, 31,"MyTriangle1");
 		Triangle tr3 = new Triangle(22, 31,"MyTriangle1");
 		

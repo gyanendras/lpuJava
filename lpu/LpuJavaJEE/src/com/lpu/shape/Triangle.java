@@ -1,5 +1,8 @@
 package com.lpu.shape;
 
+import com.lpu.anno.Graphics;
+
+@Graphics(intense = "low")
 public class Triangle extends Shape implements Comparable<Triangle>{
 private double base;
 private double height;
@@ -53,6 +56,12 @@ public int compareTo(Triangle o) {
 	return size;
 }
 
+@Override
+public void print() throws UnPrintableException {
+	if(base+height < 20) {
+	System.out.println("printed " + name);
+	}else throw new UnPrintableException("Size is Big "+ base +" " +height);
+}
 
 
 }

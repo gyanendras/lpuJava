@@ -23,6 +23,10 @@ public class Shape implements Art,Spinnable {
 		return "moving";
 	}
 
+	
+	public void print() throws UnPrintableException {
+		System.out.println("printed " + name);
+	}
 
 	@Override
 	public void spin() {
