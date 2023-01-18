@@ -2,7 +2,7 @@ package com.lpu.shape;
 
 import com.lpu.anno.Graphics;
 
-@Graphics(intense = "low")
+//@Graphics(intense = "low")
 public class Triangle extends Shape implements Comparable<Triangle>{
 private double base;
 private double height;
