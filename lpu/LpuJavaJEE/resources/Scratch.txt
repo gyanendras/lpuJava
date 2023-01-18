@@ -1,14 +1,13 @@
-TA, understanding from about TA. 
+what did you do yesterday? Are you stuck on something ? - DO Every Morning
 
-what did you do yesterday? Are you stuck on something ? 
+18 Jan
+Previous home work
+Create 5 circle objects, put them in Array and sort them as per there radius.
+Create an Exception class BlackAndWhiteOnlyException which prints 
+message that "class has no color specified"
 
-Sort 5 circles
 
 
-1 1 23 4
-2 1234 
-3
-4
 
 
 
