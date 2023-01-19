@@ -61,7 +61,7 @@ public class Client2 {
 		} catch(UnPrintableException e) {
 			System.out.println("Go to Big Printer");
 		} finally {
-			System.out.println("Always Executed");
+			System.out.println("Always Executed- release resources");
 		}
 		
      System.out.println("Rest of program");

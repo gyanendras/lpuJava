@@ -61,7 +61,7 @@ public int compareTo(Triangle o) {
 
 @Override
 public void print() throws UnPrintableException,NoColorException {
-	boolean badPrinter = true;
+	boolean badPrinter = false;
 	if(badPrinter) {
 		throw new PrinterCorruptedException("Printer is Corrupt");
 		}
