@@ -1,4 +1,4 @@
-package com.lpu.shape;
+package com.lpu.shape.exceptions;
 /*
  * There would be exceptional logic 
  * to handle that you have to create a Exception class by 
@@ -18,7 +18,7 @@ package com.lpu.shape;
  * 
  */
 public class UnPrintableException extends Exception {
-	UnPrintableException(String message){
+	public UnPrintableException(String message){
 		super(message);
 	}
 

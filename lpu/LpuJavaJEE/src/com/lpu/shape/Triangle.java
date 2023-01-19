@@ -1,6 +1,9 @@
 package com.lpu.shape;
 
 import com.lpu.anno.Graphics;
+import com.lpu.shape.exceptions.NoColorException;
+import com.lpu.shape.exceptions.PrinterCorruptedException;
+import com.lpu.shape.exceptions.UnPrintableException;
 
 //@Graphics(intense = "low")
 public class Triangle extends Shape implements Comparable<Triangle>{
@@ -58,6 +61,10 @@ public int compareTo(Triangle o) {
 
 @Override
 public void print() throws UnPrintableException,NoColorException {
+	boolean badPrinter = true;
+	if(badPrinter) {
+		throw new PrinterCorruptedException("Printer is Corrupt");
+		}
 	if(base+height < 20) {
 	System.out.println("printed " + name);
 	}else throw new UnPrintableException("Size is Big "+ base +" " +height);

@@ -1,5 +1,8 @@
 package com.lpu.shape;
 
+import com.lpu.shape.exceptions.NoColorException;
+import com.lpu.shape.exceptions.UnPrintableException;
+
 public class Shape implements Art,Spinnable {
 	protected String name;
 	protected String color;

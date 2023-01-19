@@ -4,11 +4,13 @@ import java.io.IOException;
 
 import com.lpu.shape.Art;
 import com.lpu.shape.CircleBasic;
-import com.lpu.shape.NoColorException;
+
 import com.lpu.shape.Shape;
 import com.lpu.shape.Triangle;
 import com.lpu.shape.Triangle2;
-import com.lpu.shape.UnPrintableException;
+import com.lpu.shape.exceptions.NoColorException;
+import com.lpu.shape.exceptions.UnPrintableException;
+
 
 public class Client2 {
 
