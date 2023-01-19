@@ -1,10 +1,6 @@
 what did you do yesterday? Are you stuck on something ? - DO Every Morning
 
-18 Jan
-Previous home work
-Create 5 circle objects, put them in Array and sort them as per there radius.
-Create an Exception class BlackAndWhiteOnlyException which prints 
-message that "class has no color specified"
+
 
 
 
@@ -120,5 +116,13 @@ override equals and hashcode in circle class?
 Create a git project in your eclipse using https://github.com/gyanendras/lpuJava.gits
 
 Store 10 words in an Array and sort it in ascending using Arrays.sort()
+
+18 Jan
+Previous home work
+Create 5 circle objects, put them in Array and sort them as per there radius.
+
+19 Jan
+Must - Create an Exception class BlackAndWhiteOnlyException which prints 
+message that "Black and white specified" when color is set to "Black"
 
 

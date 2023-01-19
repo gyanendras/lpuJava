@@ -57,11 +57,16 @@ public int compareTo(Triangle o) {
 }
 
 @Override
-public void print() throws UnPrintableException {
+public void print() throws UnPrintableException,NoColorException {
 	if(base+height < 20) {
 	System.out.println("printed " + name);
 	}else throw new UnPrintableException("Size is Big "+ base +" " +height);
-}
+ 
+	if(color == null) {
+	 throw new NoColorException("No Color specified");
+ }
+ }
+ 
 
 
 }

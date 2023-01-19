@@ -2,6 +2,8 @@ package com.lpu.shape;
 
 public class Shape implements Art,Spinnable {
 	protected String name;
+	protected String color;
+	
 	public Shape(){
 		name = "ShapeDefault";
 	}
@@ -22,9 +24,16 @@ public class Shape implements Art,Spinnable {
 	public String animate(String shape) {
 		return "moving";
 	}
-
 	
-	public void print() throws UnPrintableException {
+	public String getColor() {
+		return this.color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+	
+	public void print() throws UnPrintableException,NoColorException {
 		System.out.println("printed " + name);
 	}
 
