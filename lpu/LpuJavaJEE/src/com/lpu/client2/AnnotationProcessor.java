@@ -14,7 +14,9 @@ public class AnnotationProcessor {
 		Annotation[] anno = trClass.getAnnotations();
 		Graphics gr = (Graphics) anno[0];
 		String s = gr.intense();
-		System.out.println("Set Graphics card to "+s);
+		int val = gr.intensityValue();
+		System.out.println
+		 ("Set Graphics card to "+ s + " " +val);
 
 	}
 

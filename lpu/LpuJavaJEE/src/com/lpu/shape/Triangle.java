@@ -5,9 +5,10 @@ import com.lpu.shape.exceptions.NoColorException;
 import com.lpu.shape.exceptions.PrinterCorruptedException;
 import com.lpu.shape.exceptions.UnPrintableException;
 
-//@Graphics(intense = "low")
+@Graphics(intense="High", intensityValue=10)
 public class Triangle extends Shape implements Comparable<Triangle>{
 private double base;
+
 private double height;
 
 public Triangle(double b ,double h, String name){
