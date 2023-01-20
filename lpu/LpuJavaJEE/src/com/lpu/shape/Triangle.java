@@ -7,7 +7,10 @@ import com.lpu.shape.exceptions.UnPrintableException;
 
 @Graphics(intense="High", intensityValue=10)
 public class Triangle extends Shape implements Comparable<Triangle>{
+
+	
 private double base;
+
 
 private double height;
 
