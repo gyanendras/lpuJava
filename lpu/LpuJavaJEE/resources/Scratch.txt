@@ -125,4 +125,4 @@ Create 5 circle objects, put them in Array and sort them as per there radius.
 Must - Create an Exception class BlackAndWhiteOnlyException which prints 
 message that "Black and white specified" when color is set to "Black"
 
-
+20 Jan - Create 5 Circle object and store them in a Arraylist and in a HashSet and print them from both.
