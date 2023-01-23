@@ -2,12 +2,18 @@ package com.lpu.client2;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
+import java.util.TreeSet;
 
+import com.lpu.domain.Department;
 import com.lpu.domain.Employee;
 
 /* Collections are datastructures provided to you by
@@ -24,11 +30,19 @@ public class ClientCollections {
 	
 
 	public static void main(String[] args) {
-		List<Employee> empList = new ArrayList<Employee>();
-	Employee emp1 = new Employee("Emp1",1,10);
+		Collection c = new ArrayList();
+		
+		List l = new ArrayList();
+		ArrayList ar  = new ArrayList();
+		Set hs = new HashSet(); // Unique
+    	hs = new TreeSet(); // Unique and sorted
+		
+	List<Employee> empList = new ArrayList<Employee>();
+	Employee emp1 = new Employee("Emp1",10,10);
 	Employee emp2 = new Employee("Emp2",2,20);
 	Employee emp3 = new Employee("Emp3",3,30);
-	Employee emp4 = new Employee("Emp3",3,30);
+	Employee emp4 = new Employee("Emp4",4,30);
+	Employee emp5 = new Employee("Emp5",5,50);
 	
 	empList.add(emp1);
 	empList.add(emp2);
@@ -55,14 +69,46 @@ public class ClientCollections {
 	 // empList.remove(emp1);
 	System.out.println(coll.size());
 	
-	Set<Employee> setEmp = new HashSet<Employee>();
+	Set<Employee> setEmp = new TreeSet<Employee>();
+	setEmp.add(emp5);
+	setEmp.add(new Employee("Emp6",5,50));
+	
 	setEmp.addAll(empList);
 	
 	System.out.println(setEmp.size());
 
+	for(Employee e:setEmp) {
+		System.out.println(e.getEmpId()+" "+ e.getName());
+	}
 	
 	
 	
+	// Map is a Key value pair
+		Map<Employee, Department> mp = 
+				new HashMap<Employee, Department>();
+		Department hr = new Department("HR");
+		Department IT = new Department("IT");
+	
+	mp.put(emp1, hr);
+	mp.put(emp2, hr);
+	mp.put(emp3, IT);
+	mp.put(emp4, IT);
+	
+	System.out.println(mp.get(emp3).getName());
+	System.out.println(mp.get(emp2).getName());
+	
+	Set<Entry<Employee, Department>> setOfpairs = mp.entrySet();
+	
+	
+	for(Entry<Employee, Department> pair:setOfpairs) {
+		//System.out.println(setOfpairs.size());
+		System.out.println(pair.getKey().getEmpId());
+		System.out.println(pair.getValue().getName());
+	}
+		
+	Set<Employee> empKeySet = mp.keySet();
+	
+	mp.values();
 	
 	}
 	
