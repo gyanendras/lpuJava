@@ -93,6 +93,7 @@ public class ClientCollections {
 	mp.put(emp2, hr);
 	mp.put(emp3, IT);
 	mp.put(emp4, IT);
+	mp.put(emp1, IT);
 	
 	System.out.println(mp.get(emp3).getName());
 	System.out.println(mp.get(emp2).getName());
@@ -107,7 +108,10 @@ public class ClientCollections {
 	}
 		
 	Set<Employee> empKeySet = mp.keySet();
-	
+	for(Employee e:empKeySet) {
+		System.out.println(e.getEmpId()+ " " + e.getName() );
+	}
+	// Print the values in the map mp.
 	mp.values();
 	
 	}
