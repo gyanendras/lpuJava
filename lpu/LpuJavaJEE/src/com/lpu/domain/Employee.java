@@ -28,6 +28,12 @@ public class Employee implements Comparable {
 	int empId;
 	double salary;
 	
+	public Employee( int empId) {
+		super();
+		this.empId = empId;
+		this.name = "DefEmp" + empId;
+	}
+	
 	public Employee(String name, int empId, double salary) {
 		super();
 		this.name = name;

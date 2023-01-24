@@ -1,5 +1,12 @@
 package com.lpu.client2;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.IntConsumer;
+import java.util.stream.Collectors;
+
+import com.lpu.domain.Employee;
+
 /*
  * 
  * empList.stream().forEach(e -> e.salaryIncrement(10.0));
@@ -30,12 +37,36 @@ boolean allEven = intList.stream().allMatch(i -> i % 2 == 0);
       .reduce(0.0, Double::sum);
       .collect(Collectors.joining(", "))
       .toString();
+      
+      https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/stream/Stream.html
  */
 public class StreamClient {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		int [] intArray = {11,4,2,5,6,7,33,22,11,55,8,44};
+		
+		IntConsumer intCons = (a)-> System.out.print(" "+a);
+		intCons =a-> System.out.print(" "+a);
+		
+		// Arrays.stream(intArray).forEach(intCons);
+		//Arrays.stream(intArray).forEach(a-> System.out.print(" "+a));
 
+		long count = Arrays.stream(intArray)
+				              .filter(a -> a%2==0)
+				               .map(a->a*a)
+		                       .mapToObj(a ->  new Employee(a))
+		                       .peek(a-> System.out.print(" "+a.getName()+" "))
+		                        .count();
+		
+		List<Employee> l=     Arrays.stream(intArray)
+                         .mapToObj(a ->  new Employee(a))
+                         .collect(Collectors.toList());
+		
+		
+	 //.forEach(a-> System.out.print(" "+a.getName()));
+		System.out.println(count);
+		System.out.println(l.get(0).getEmpId());
 	}
 
+	
 }
