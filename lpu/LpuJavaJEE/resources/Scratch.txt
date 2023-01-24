@@ -130,3 +130,7 @@ message that "Black and white specified" when color is set to "Black"
 23 Jan - Create a map of 5 Employees  and there Cars, and print keySet and Values using KeySet and Values method 
 of HashMap. Hint Create Employee Class and Car Class and put them in a HashMap.
 
+24 Jan - Create few lambda i.e anonymous function definitions and assign then to Function<T,R>, Predicate<T>, Supplier<T> and Consumer<T>
+
+2. create a stream of integers , pint them using peek and then sum them using sum()
+
