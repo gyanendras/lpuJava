@@ -47,11 +47,20 @@ and e.manager_id = d.manager_id
 and e.first_name = 'Bruce' ;
 
 -- select all employees adn there deparment names.
-select e.employee_id, e.first_name, d.department_name from employees e JOIN departments d ON  e.department_id = d.department_id
+select e.employee_id, e.first_name, d.department_name from employees e JOIN departments d ON  e.department_id = d.department_id ;
 
-select e.employee_id, e.first_name, d.department_name from employees e LEFT JOIN departments d ON  e.department_id = d.department_id
+select e.employee_id, e.first_name, d.department_name from employees e LEFT JOIN departments d ON  e.department_id = d.department_id ;
 
-select e.employee_id, e.first_name, d.department_name from employees e RIGHT JOIN departments d ON  e.department_id = d.department_id
+select e.employee_id, e.first_name, d.department_name from employees e RIGHT JOIN departments d ON  e.department_id = d.department_id ;
+
+
+select e.employee_id, e.department_id, d.department_id from employees e RIGHT JOIN departments d ON  e.department_id = d.department_id
+and e.employee_id is null;
+
+-- select first_name and department name of employees who joined after 2017.
+-- select all the employees of department Marketing
+-- select all the deparments where there are no employees
+-- select all the employees which have no department.
 
 
 
