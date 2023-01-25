@@ -15,6 +15,7 @@ insert into students values (4,'Monu', 23);
 insert into students values (5,'Monu', 25);
 
 
+
 select * from students 
 where roll_num = 2;
 
@@ -31,6 +32,26 @@ where roll_num = 5;
 
 update students
 set course_id = 24, student_name = 'MonuNew'
-where roll_num = 4
+where roll_num = 4 ;
+
+select * from employees e
+where e.department_id is null
+
+select * from departments;
+
+select count(*) from employees;
+
+select * from employees e JOIN departments d ON  e.department_id = d.department_id
+where d.department_name = 'IT'
+and e.manager_id = d.manager_id
+and e.first_name = 'Bruce' ;
+
+-- select all employees adn there deparment names.
+select e.employee_id, e.first_name, d.department_name from employees e JOIN departments d ON  e.department_id = d.department_id
+
+select e.employee_id, e.first_name, d.department_name from employees e LEFT JOIN departments d ON  e.department_id = d.department_id
+
+select e.employee_id, e.first_name, d.department_name from employees e RIGHT JOIN departments d ON  e.department_id = d.department_id
+
 
 
