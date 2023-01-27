@@ -69,6 +69,8 @@ and e.employee_id is null;
 -- select department name when department id in, 
   -- between, and then department name like
   
+ -- 27 Jan - find max salary of employees in each department .
+  
   select department_name  from departments d
   where d.department_name like 'ad%';
   
@@ -77,3 +79,16 @@ and e.employee_id is null;
 
 select department_name,d.department_id  from departments d
   where d.department_id between 40 and 80;
+  
+  
+select e.employee_id, e.employee_id, d.department_id, d.department_name from employees e Left JOIN departments d
+ON e.department_id = d.department_id
+
+group by department_id,d.department_name
+having count(e.employee_id) < 10 
+and max(e.employee_id) < 200
+
+order by d.department_id, d.department_name
+
+  
+
