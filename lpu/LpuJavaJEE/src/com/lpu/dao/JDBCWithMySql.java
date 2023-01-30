@@ -12,6 +12,25 @@ import com.lpu.domain.Employee;
 
 public class JDBCWithMySql {
 	static Connection con;
+	
+	public static void insert() {
+		try {
+			con =
+					DriverManager.getConnection
+					("jdbc:mysql://localhost:3306/hr", 
+							"root", "full2work");
+		
+		System.out.println(con);
+		Statement stmt = con.createStatement();
+		String sql = "insert into regions values(7,'New7')";
+		boolean success = stmt.execute(sql);
+		System.out.println(success);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
 	public static void main(String[] args) {
 		try {
 			 con =
