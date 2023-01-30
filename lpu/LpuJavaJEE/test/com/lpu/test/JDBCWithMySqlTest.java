@@ -22,6 +22,7 @@ class JDBCWithMySqlTest {
 	@Test
 	void testPreparedStatement() {
 		System.out.println("I am testing Preparedstatent");
+		JDBCWithMySql.insertWithParams(9, "NewWorld9");
 	}
 
 }

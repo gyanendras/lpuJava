@@ -134,3 +134,7 @@ of HashMap. Hint Create Employee Class and Car Class and put them in a HashMap.
 
 2. create a stream of integers , pint them using peek and then sum them using sum()
 
+
+30 Jan - Create a prepared statement for "select * from employees where employee_id = ?".
+And Execute it in aJunit test method.
+
