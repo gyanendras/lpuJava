@@ -28,3 +28,36 @@ body{
 	width: 60px;
 	height:60px;
 }
+
+#h1Serv{
+	color:brown;
+	text-align: center;
+}
+
+#ul2{
+	  border: 2px solid red;
+	  width:40%;
+	  position: relative;
+	  display: inline-block;
+	  
+	  
+	
+}
+
+#ul1{
+	  border: 2px solid red;
+	   width:40%;
+	     position: relative;
+	  display: inline-block;
+	   
+	
+}
+
+.lblServ{
+	background-color:bisque;
+	text-align: center;
+	 position: relative;
+	width:40%;
+	padding: 10px;
+	left:35%;
+}
