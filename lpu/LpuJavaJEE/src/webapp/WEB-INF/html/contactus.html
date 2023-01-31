@@ -4,16 +4,19 @@
 <meta charset="UTF-8">
 <title>Contact Universal Systems</title>
 <link rel="stylesheet" href="../css/lpuhr.css">
+
 </head>
 <body>
 <span id="co-span">Please Submit the form to reach us!</span>
-<form action="/formservlet" method="get" id="form-contactus">
+<form action="/formservlet" method="get" id="form-contactus" name="myform" onsubmit="return validate()">
 
 <lable class="co-label">First Name</lable>
-<input type="text" name="fname" >
+<!-- validate in javascript that fname shud not be null -->
+<input type="text" id= "fn1" name="fname" value="tom">
 <lable class="co-label">Last Name</lable>
-
 <input type="text" name="lname" >
+<label name="lnerror"></label>
+
 <lable class="co-label">Email</lable>
 
 <input type="email" name="email">
@@ -42,6 +45,7 @@
 <input type="submit" value="Submit Form">
 
 </form>
+<script type="text/javascript" src="../js/lpu.js"></script>
 
 </body>
 </html>
