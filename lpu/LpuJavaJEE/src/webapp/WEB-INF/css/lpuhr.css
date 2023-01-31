@@ -61,3 +61,34 @@ body{
 	padding: 10px;
 	left:35%;
 }
+
+#p-careers{
+	text-align: center;
+	border: 2px solid red;
+}
+
+table,th,td{
+	border: 2px solid bisque;
+	
+}
+
+#tbl-careers{
+	position: relative;
+	background-color:green;
+	margin-left:20%;
+	width:70%;
+	
+}
+
+#form-contactus{
+	border:2px solid red;
+}
+
+.co-label{
+	display:block;
+}
+
+#co-span{
+	text-align: center;
+	padding-left:20px;
+}
