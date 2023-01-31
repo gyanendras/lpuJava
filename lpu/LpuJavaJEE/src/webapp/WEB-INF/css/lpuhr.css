@@ -4,3 +4,27 @@ body{
 	
 }
 
+#cname{
+	color:brown;
+	text-align: center;
+	font-size: 40px;
+	background-color:beige
+}
+
+.ha{
+	width: 20px;
+	height:20px;
+	font-size: 20px;
+	background-color:yellow;
+	border: 20px red;
+	margin: 20px;
+	padding: 10px;
+	border-radius:10px;
+	text-decoration: none;
+	
+}
+
+#logo{
+	width: 60px;
+	height:60px;
+}
