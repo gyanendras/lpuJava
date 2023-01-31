@@ -7,9 +7,9 @@
 <body>
 <span>Please Submit the form to reach us!</span>
 <form action="/formservlet" method="get">
-<lable>First Name</lable>
+<lable class="co-label">First Name</lable>
 <input type="text" name="fname" >
-<lable>Last Name</lable>
+<lable class="co-label">Last Name</lable>
 <input type="text" name="lname" >
 <lable>Email</lable>
 <input type="email" name="email">
@@ -22,7 +22,16 @@
 
 
 <!-- Add radio button Are you an Employee , yes, no -->
+<lable>Are you an Employee? </lable>
+<input type="radio" name="yes">
+<input type="radio" name="no">
+<!--  how to select just one radio button -->
+
 <!-- Add a check box, Select languages Hindi, English, Tamil, Malyalam, Punjabi -->
+<lable>What languages you speak? </lable>
+<input type="checkbox" name="lang" value="Hindi">
+<input type="checkbox" name="lang" value="English">
+<input type="checkbox" name="lang" value="Punjabi">
 
 <input type="submit" value="Submit Form">
 
