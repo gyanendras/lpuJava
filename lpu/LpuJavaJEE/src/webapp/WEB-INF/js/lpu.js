@@ -4,7 +4,7 @@
 // alert("hello World-1");
 console.log("Trying JavaScript-2");
 var x = "Delhi";
-x = 123;
+x = 1;
 // x = new Date();
 console.log(x);
 document.write("<h1>JavaScritp heading</h1>");
@@ -32,4 +32,11 @@ if(y4.length==0) {
 return false;
 
 }
+
+function eventProcessing(){
+	console.log("i am moving mouse"+ ++x);
+}
+
+
+
 //console.log(y);
