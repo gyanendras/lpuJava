@@ -30,10 +30,10 @@ public class FormServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		PrintWriter pw =response.getWriter();
-		pw.write("<h1>Hi From Server!</>");
+		pw.append("<h1>Hi From Server!</>");
 		String fname = request.getParameter("fname");
 		String lname = request.getParameter("lname");
-		pw.append(fname+" "+lname);
+		pw.append("Welcome "+fname+" "+lname );
 	}
 
 	/**
