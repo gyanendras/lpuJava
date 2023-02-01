@@ -28,13 +28,22 @@ if(y4.length==0) {
 	document.getElementsByName("lnerror")[0].style.border="solid red";
 	document.getElementsByName("lnerror")[0].style.color="red";
 }
-
+// return true only when there is no error above it.
 return false;
 
 }
 
 function eventProcessing(){
+	var city = document.getElementsByName("city")[0].value;
+    console.log(city);
 	console.log("i am moving mouse"+ ++x);
+	if(city=="Remote"){
+		document.getElementById("remoteMsg").innerHTML="Work From Anywhere in India!!";
+		ylabel=document.createElement("label");
+		ylabel.innerHTML = "create label to append";
+		y[0].appendChild(ylabel);
+		
+	}
 }
 
 
