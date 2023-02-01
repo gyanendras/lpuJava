@@ -8,7 +8,7 @@
 </head>
 <body>
 <span id="co-span">Please Submit the form to reach us!</span>
-<form action="/formservlet" method="get" id="form-contactus" name="myform" onsubmit="return validate()">
+<form action="http://localhost:8082/LpuJavaJEE/processform" method="get" id="form-contactus" name="myform" onsubmit="return validate()">
 
 <lable class="co-label">First Name</lable>
 <!-- validate in javascript that fname shud not be null -->
@@ -28,7 +28,7 @@
 <option>Delhi</option>
 <option>Remote</option>
 </select>
-<label id="remoteMsg"></label>
+<label id="remoteMsg">No message</label>
 
 <!-- Add radio button Are you an Employee , yes, no -->
 <lable class="co-label">Are you an Employee? </lable>

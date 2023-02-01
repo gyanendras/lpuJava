@@ -17,11 +17,13 @@ var y = document.getElementsByName("myform");
 var y2 = document.getElementById("fn1");
 
 function validate(){
+	valid = true;
 var y3 = document.forms["myform"]["fname"].value;
 var y4 = document.forms["myform"]["lname"].value;
 console.log(y3);
 
 if(y4.length==0) {
+	valid = false;
 	console.log("put value of last name");
 	// alert("Add value to Last name");
 	document.getElementsByName("lnerror")[0].innerHTML = "Error:Add value to Last name";
@@ -29,7 +31,7 @@ if(y4.length==0) {
 	document.getElementsByName("lnerror")[0].style.color="red";
 }
 // return true only when there is no error above it.
-return false;
+return valid;
 
 }
 

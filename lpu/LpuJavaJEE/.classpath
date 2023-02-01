@@ -12,6 +12,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/Gyan/Downloads/javax.servlet-api-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gyan/Downloads/javax.servlet-api-3.0.1.jar" sourcepath="C:/Users/Gyan/.m2"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
