@@ -43,6 +43,7 @@ public class FormServlet extends HttpServlet {
 		PrintWriter pw =response.getWriter();
 		//pw.append("<h1>Hi From Server!</>");
 		String fname = request.getParameter("fname");
+		Integer id = Integer.parseInt(fname);
 		String lname = request.getParameter("lname");
 		//pw.append("Welcome "+fname+" "+lname );
 		Connection con=null;
@@ -57,7 +58,7 @@ public class FormServlet extends HttpServlet {
 		String sql = "Select * from Employees where employee_id between 100 and ?";
 		 
 		PreparedStatement ps = con.prepareStatement(sql);
-		ps.setString(1, fname);
+		ps.setInt(1, id);
 		ResultSet rs = ps.executeQuery();
 		List<Employee> ls = new ArrayList();
 		while(rs.next()) {
@@ -83,10 +84,12 @@ public class FormServlet extends HttpServlet {
 			pw.append("</tr>");
 			pw.append("</table>");
 			
-			request.setAttribute("empList", ls);
-			request.getRequestDispatcher("/emp").forward(request, response);
 			
 		}
+		request.setAttribute("empList", ls);
+		request.getRequestDispatcher("/emp").forward(request, response);
+		
+		
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}

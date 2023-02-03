@@ -13,10 +13,11 @@
 <h1 style="color:red">
 <% out.println("Hello World!");
 List<Employee> ls = (List)request.getAttribute("empList");
-out.println(ls.size());
-for(Employee emp:ls){%>
+out.println(ls.size());%>
+<table style="border: 2px solid red; padding:30%;">
+<%for(Employee emp:ls){%>
 
-<table style="border: 2px solid red">
+
 <tr style="border: 1px solid yellow">
 <td style="border: 1px solid blue">
 <%= emp.getName()%>
@@ -30,11 +31,12 @@ for(Employee emp:ls){%>
 
 </tr>
 
-</table>
+
 
 <% 
 }
 %>
+</table>
 
 </h1>
 <h2 style="color:blue">
